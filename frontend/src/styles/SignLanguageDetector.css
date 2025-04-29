@@ -1,0 +1,100 @@
+.sign-language-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: var(--background-color);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.video-container {
+  position: relative;
+  width: 640px;
+  height: 480px;
+  margin: 20px 0;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #000;
+}
+
+.video-feed {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay-canvas {
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.sign-result {
+  text-align: center;
+  margin: 20px 0;
+  padding: 15px;
+  background-color: var(--secondary-background);
+  border-radius: 8px;
+  width: 100%;
+  max-width: 640px;
+}
+
+.detected-sign {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+.confidence {
+  font-size: 1.2rem;
+  color: var(--text-color);
+}
+
+.instructions {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: var(--secondary-background);
+  border-radius: 8px;
+  width: 100%;
+  max-width: 640px;
+}
+
+.instructions h4 {
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+.instructions ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.instructions li {
+  margin: 8px 0;
+  color: var(--text-color);
+}
+
+/* Dark mode support */
+[data-theme="dark"] .sign-language-container {
+  background-color: var(--dark-background);
+}
+
+[data-theme="dark"] .sign-result,
+[data-theme="dark"] .instructions {
+  background-color: var(--dark-secondary-background);
+}
+
+[data-theme="dark"] .detected-sign {
+  color: var(--dark-primary-color);
+}
+
+[data-theme="dark"] .instructions h4 {
+  color: var(--dark-primary-color);
+}
+
+[data-theme="dark"] .instructions li {
+  color: var(--dark-text-color);
+} 
