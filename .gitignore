@@ -1,0 +1,127 @@
+# Python virtual environment
+venv/
+env/
+ENV/
+myenv/
+**/venv/
+**/env/
+**/ENV/
+**/myenv/
+
+
+# Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+**/__pycache__/
+**/*.py[cod]
+**/*$py.class
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+**/dist/
+**/build/
+**/*.egg-info/
+
+# IDE specific files
+.vscode/
+.idea/
+*.swp
+*.swo
+**/.vscode/
+**/.idea/
+**/*.swp
+**/*.swo
+
+# Logs and databases
+*.log
+*.sqlite3
+**/*.log
+**/*.sqlite3
+
+# Environment variables
+.env
+.env.local
+**/.env
+**/.env.local
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb
+**/.ipynb_checkpoints
+**/*.ipynb
+
+# Model files to keep
+!model/*.h5
+!model/*.pth
+!model/*.onnx
+!model/*.json
+!model/*.txt
+!model/*.py
+
+# Exclude large temporary files
+*.tmp
+*.temp
+**/*.tmp
+**/*.temp
+
+# Exclude test output files
+test_output.txt
+**/test_output.txt
+
+# Local development settings
+local_settings.py
+**/local_settings.py
+
+# OS files
+.DS_Store
+Thumbs.db
+**/.DS_Store
+**/Thumbs.db
+
+# Python
+*.pyc
+*.pyo
+*.pyd
+.Python
+develop-eggs/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+.installed.cfg
+*.egg
+**/*.pyc
+**/*.pyo
+**/*.pyd
+**/.Python
+**/develop-eggs/
+**/downloads/
+**/eggs/
+**/.eggs/
+**/lib/
+**/lib64/
+**/parts/
+**/sdist/
+**/var/
+**/wheels/
+**/.installed.cfg
+**/*.egg
+
+# Node modules
+node_modules/
+**/node_modules/
+
+# Data directories
+data/
+**/data/
+
+# Keep Haar Cascade file
+!model/resources/haarcascade_frontalface_default.xml
