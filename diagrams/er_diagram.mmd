@@ -1,0 +1,25 @@
+erDiagram
+    USER ||--o{ EMOTION_RECORD : has
+    USER ||--o{ GESTURE_RECORD : has
+    USER {
+        int user_id PK
+        string username
+        string email
+        datetime created_at
+    }
+    EMOTION_RECORD {
+        int record_id PK
+        int user_id FK
+        string emotion_type
+        float confidence
+        datetime timestamp
+        string image_path
+    }
+    GESTURE_RECORD {
+        int record_id PK
+        int user_id FK
+        string gesture_type
+        float confidence
+        datetime timestamp
+        string video_path
+    } 

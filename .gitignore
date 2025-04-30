@@ -8,17 +8,6 @@ myenv/
 **/ENV/
 **/myenv/
 
-# Model files and directories
-model/
-**/model/
-*.h5
-*.pth
-*.onnx
-*.npy
-*.zip
-*.hdf5
-*.pkl
-*.model
 
 # Python cache files
 __pycache__/

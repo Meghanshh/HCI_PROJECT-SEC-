@@ -1,0 +1,24 @@
+flowchart LR
+    A[Input Data] -->|Preprocessing| B[Data Cleaning]
+    B -->|Feature Extraction| C[Feature Engineering]
+    C -->|Model Training| D[Model Development]
+    D -->|Evaluation| E[Model Testing]
+    E -->|Deployment| F[Production Model]
+
+    subgraph Data Preparation
+        A
+        B
+        C
+    end
+
+    subgraph Model Development
+        D
+        E
+    end
+
+    subgraph Deployment
+        F
+    end
+
+    style A fill:#f9f,stroke:#333,stroke-width:2px
+    style F fill:#bbf,stroke:#333,stroke-width:2px 

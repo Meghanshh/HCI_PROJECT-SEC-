@@ -1,0 +1,25 @@
+flowchart TD
+    A[User Research] -->|Understand Needs| B[Requirements Analysis]
+    B -->|Design| C[Interface Design]
+    C -->|Develop| D[Prototype Development]
+    D -->|Test| E[User Testing]
+    E -->|Feedback| F[Iterative Improvement]
+    F -->|Refine| C
+
+    subgraph Research
+        A
+        B
+    end
+
+    subgraph Design
+        C
+        D
+    end
+
+    subgraph Testing
+        E
+        F
+    end
+
+    style A fill:#f96,stroke:#333,stroke-width:2px
+    style F fill:#f96,stroke:#333,stroke-width:2px 
