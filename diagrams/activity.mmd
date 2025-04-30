@@ -1,0 +1,14 @@
+flowchart TD
+    A[Start] -->|User Opens App| B[Select Mode]
+    B -->|Emotion Detection| C[Capture Face]
+    B -->|Sign Language| D[Capture Hand Gestures]
+    C -->|Process| E[Analyze Emotion]
+    D -->|Process| F[Analyze Gestures]
+    E -->|Display| G[Show Results]
+    F -->|Display| G
+    G -->|Continue?| H{Decision}
+    H -->|Yes| B
+    H -->|No| I[End]
+
+    style A fill:#9f9,stroke:#333,stroke-width:2px
+    style I fill:#f99,stroke:#333,stroke-width:2px 

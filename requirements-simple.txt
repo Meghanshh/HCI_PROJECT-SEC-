@@ -1,0 +1,10 @@
+flask>=2.0.1
+flask-cors>=3.0.10
+numpy
+opencv-python
+mediapipe
+pillow
+tqdm
+requests
+python-dotenv
+scikit-learn 

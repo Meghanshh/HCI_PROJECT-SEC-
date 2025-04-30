@@ -1,0 +1,30 @@
+// System Flow
+digraph "System Flowchart" {
+	rankdir=TB
+	A [label=User]
+	B [label="Frontend Interface"]
+	C [label="Media Input"]
+	D [label="Backend Server"]
+	E [label="Emotion Model"]
+	F [label="Sign Language Model"]
+	A -> B [label="Access System"]
+	B -> C [label="Capture Video/Image"]
+	C -> D [label="Process Input"]
+	D -> E [label="Emotion Detection"]
+	D -> F [label="Sign Language Detection"]
+	E -> D [label="Return Results"]
+	F -> D [label="Return Results"]
+	D -> B [label="Display Results"]
+	B -> A [label="Show Results"]
+	subgraph cluster_frontend {
+		label=Frontend
+		B
+		C
+	}
+	subgraph cluster_backend {
+		label=Backend
+		D
+		E
+		F
+	}
+}

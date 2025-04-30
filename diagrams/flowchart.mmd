@@ -1,0 +1,21 @@
+flowchart TD
+    A[User] -->|Access System| B[Frontend Interface]
+    B -->|Capture Video/Image| C[Media Input]
+    C -->|Process Input| D[Backend Server]
+    D -->|Emotion Detection| E[Emotion Model]
+    D -->|Sign Language Detection| F[Sign Language Model]
+    E -->|Return Results| D
+    F -->|Return Results| D
+    D -->|Display Results| B
+    B -->|Show Results| A
+
+    subgraph Frontend
+        B
+        C
+    end
+
+    subgraph Backend
+        D
+        E
+        F
+    end 
